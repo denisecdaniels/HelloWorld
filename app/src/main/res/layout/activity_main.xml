@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Added layout_marginTop
+        Added android:layout_marginHorizontal="20dp
+        Added android:textSize="20sp"
+        Added android:textStyle="bold"
+        Added android:layout_marginTop="30dp""
+    -->
+    <TextView
+        android:id="@+id/vsuName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Virginia State University"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vsuImage" />
+
+
+    <!--Added layout_marginTop
+        Added app:srcCompat="@drawable/vsu_web_01_1920x1200
+        Removed: tools:srcCompat="@tools:sample/avatars
+        Changed the layout width and height of the image
+        Can add a scale type by using the following: android:scaleType="centerCrop"
+     -->
+    <ImageView
+        android:id="@+id/vsuImage"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vsu_web_01_1920x1200"
+        android:layout_marginTop="120dp"
+         />
+
+    <Button
+        android:id="@+id/learnMoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/LearnMore"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vsuName"
+        app:layout_constraintVertical_bias="0.527" />
+
+    <TextView
+        android:id="@+id/vsuStatement"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/VSUIntroduction"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/learnMoreButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vsuName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

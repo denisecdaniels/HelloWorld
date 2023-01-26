@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="VSUIntroduction">Virginia State University fosters sustained excellence as a preeminent public land-grant university, providing access to higher education and a holistic, greater learning experience to produce world-class leaders and scholars.</string>
+    <string name="LearnMore">Learn More</string>
+</resources>
